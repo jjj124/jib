@@ -1,0 +1,23 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.google.cloud.tools</groupId>
+  <artifactId>parent</artifactId>
+  <version>0.10.2-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>Jib</name>
+  <description>A tool for building container images for your Java applications.</description>
+  <url>https://github.com/GoogleContainerTools/jib</url>
+
+  <licenses>
+    <license>
+      <name>The Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+
+  <modules>
+    <module>jib-maven-plugin</module>
+  </modules>
+</project>
