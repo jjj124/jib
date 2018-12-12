@@ -93,6 +93,7 @@ tasks.withType(JavaCompile) {
 // Fail build on javadoc warnings
 tasks.withType(Javadoc) {
   options.addBooleanOption('Xwerror', true)
+  options.addStringOption('Xdoclint:none', '-quiet')
 }
 assemble.dependsOn javadoc
 
