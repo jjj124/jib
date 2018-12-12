@@ -5,5 +5,5 @@ install:
     - (cd jib-plugins-common; ./gradlew --stacktrace build install)
     - (cd jib-gradle-plugin; ./gradlew --stacktrace build install)
     # unset _JAVA_OPTIONS to avoid spurious test failures
-    - (cd jib-maven-plugin; unset _JAVA_OPTIONS; ./mvnw -B install -U)
+    - (cd jib-maven-plugin; unset JAVA_TOOL_OPTIONS _JAVA_OPTIONS; ./mvnw -B install -U)
 
