@@ -7,4 +7,5 @@ install:
     - (cd jib-gradle-plugin; ./gradlew --stacktrace build install)
     # unset _JAVA_OPTIONS to avoid spurious test failures
     - (cd jib-maven-plugin; unset JAVA_TOOL_OPTIONS _JAVA_OPTIONS; ./mvnw -B install -U)
+    - find $HOME/.m2/repository/com/google/cloud/tools -type f
 
