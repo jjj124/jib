@@ -1,0 +1,10 @@
+jdk: oraclejdk8
+env:
+  TERM: 'dumb'         # for gradle
+install: 
+    - (cd jib-core; ./gradlew --stacktrace build install)
+    - (cd jib-plugins-common; ./gradlew --stacktrace build install)
+    - (cd jib-gradle-plugin; ./gradlew --stacktrace build install)
+    # unset _JAVA_OPTIONS to avoid spurious test failures
+    - (cd jib-maven-plugin; unset _JAVA_OPTIONS; ./mvnw -B verify install -U)
+
