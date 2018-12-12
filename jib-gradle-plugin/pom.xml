@@ -1,0 +1,8 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.google.cloud.tools</groupId>
+  <artifactId>jib-gradle-plugin</artifactId>
+  <version>0.10.2-SNAPSHOT</version>
+  <packaging>pom</packaging>
+</project>

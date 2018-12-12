@@ -19,5 +19,6 @@
 
   <modules>
     <module>jib-maven-plugin</module>
+    <module>jib-gradle-plugin</module>   <!-- trick jitpack into thinking this is multimodule? -->
   </modules>
 </project>
